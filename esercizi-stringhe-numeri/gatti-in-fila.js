@@ -16,7 +16,10 @@
 var gatti = 44;
 var gattiFila = 6;
 
-var file = gatti/gattiFila;
+var file = Math.ceil(gatti/gattiFila);
+var fileDown = Math.floor(gatti/gattiFila);
+var gattiMancanti = gatti-(gattiFila*fileDown);
 
 
-document.write('file');
+document.write("Le file totali sono: " + file + "<br>");
+document.write(" e rimangono " + gattiMancanti + " gatti");
