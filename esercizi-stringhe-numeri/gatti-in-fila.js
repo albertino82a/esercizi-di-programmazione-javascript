@@ -13,13 +13,11 @@
   http://www.imparareaprogrammare.it
 */
 
-var gatti = 44;
-var gattiFila = 6;
+var cats = 44;
+var inLine = 6;
 
-var file = Math.ceil(gatti/gattiFila);
-var fileDown = Math.floor(gatti/gattiFila);
-var gattiMancanti = gatti-(gattiFila*fileDown);
+var numLine = Math.ceil(cats/inLine);
+var missing = (numLine*inLine)-cats;
 
-
-document.write("Le file totali sono: " + file + "<br>");
-document.write(" e rimangono " + gattiMancanti + " gatti");
+document.write(`${cats} gatti in fila per ${inLine} si sono messi in
+${numLine} file. Nell'ultima fila sono rimasti ${missing} posti disponibili.`)
