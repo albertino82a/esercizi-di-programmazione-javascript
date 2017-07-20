@@ -19,4 +19,4 @@ var gattiFila = 6;
 var file = gatti/gattiFila;
 
 
-console.log('file');
+document.write('file');
