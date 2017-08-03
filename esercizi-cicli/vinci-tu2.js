@@ -5,20 +5,21 @@
   http://www.imparareaprogrammare.it
 */
 var n = 4;
-var user1 = Math.floor(Math.random() * (25)) + 1;
-var user2 = Math.floor(Math.random() * (25)) + 1;
+var user1 = 0;
+var user2 = 0;
 var a = 0;
-var b = Math.floor(Math.random() * (25)) + 1;
+var b = 0;
 var c = 0;
 
 
   for (i = 0;i < n; i++){
-b++;
-user1 += i;
 
-user2 += i;
+b = Math.floor(Math.random() * (6) ) +1;
+user1 += b;
+c = Math.floor(Math.random() * (6) ) +1;
+user2 += c;
 
-document.write(b);
+
 
 if (user1 < user2) {
   a = ' user 2 is the winner ';
@@ -31,4 +32,4 @@ a = ' drow ';
 
 
 }
-console.log(a, user1, user2);
+document.write(a, user1 + ' ', user2);

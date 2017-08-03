@@ -10,3 +10,24 @@
   Hint: Per generare un numero casuale utlizza la funzione javascript random, che restituisce un intervallo compreso tra 0 e 1 che necessita di essere convertito per il tuo intervallo.
   http://www.imparareaprogrammare.it
 */
+var user1 = [];
+var user2 = [];
+var result;
+
+user1.length = 10;
+user2.length = 10;
+
+for (var i = 0; i < user1.length; i++) {
+  user1[i] = Math.floor(Math.random() * (10)) + 1;
+  user2[i] = Math.floor(Math.random() * (10)) + 1;
+}
+Number(user1[i]);
+Number(user2[i]);
+//var input = prompt("Aritmetic sign");
+
+for(var j = 0; j < user1.length; j++){
+  result += (user1[i] + user2[i]);
+}
+console.log(user1);
+console.log(user2);
+console.log(result);

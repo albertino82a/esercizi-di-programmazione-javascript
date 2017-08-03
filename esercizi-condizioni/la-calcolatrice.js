@@ -54,4 +54,3 @@ switch (true) {
   alert('su dai, scegline uno che sia uguale a quelli elencati!')
 
 }
-console.log(result);

@@ -6,3 +6,6 @@
   Non utilizzare array di appoggio per inversione.
   http://www.imparareaprogrammare.it
 */
+var numeri = [1,2,3,5,8,9];
+
+console.log(numeri.reverse());

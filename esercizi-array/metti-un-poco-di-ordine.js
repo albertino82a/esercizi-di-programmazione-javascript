@@ -6,3 +6,7 @@
   Prova ad ordinali in modo crescente.
   http://www.imparareaprogrammare.it
 */
+var crescente = [1,5,3,8,23,7];
+
+crescente.sort(function(a,b){return a-b});
+console.log(crescente);
