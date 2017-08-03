@@ -12,20 +12,9 @@
   http://www.imparareaprogrammare.it
 */
 let cartella = [];
-//var randomNumber = 0;
 var result;
-var greater = 0;
-var a;
-var b;
-var c;
-var d;
-var e;
-
 var num = [];
 
-//cartella.length = 5;
-//for (var i = 0; i < cartella.length; i++) {
-  //cartella[i] = Math.floor(Math.random() * (90)) + 1;
 
   while(cartella.length < 5) {
   var  randomNumber = Math.ceil(Math.random() * 90)
@@ -33,6 +22,7 @@ var num = [];
    cartella[cartella.length] = randomNumber;
 }
 console.log(cartella);
+
 
 
 var num1 = prompt('1) give me a number between 1 to 90');
@@ -59,9 +49,10 @@ var num5 = prompt('5)give me a number between 1 to 90');
   if ( num5 > 90 || num5 == num1 || num5 == num2 || num5 == num3 || num5 == num4) {
   alert('inser a good one');
   num5 = prompt('5) give me a number between 1 to 90');
+
 }
 
-num.push(Number(num1), Number(num1), Number(num3), Number(num4), Number(num5));
+num.push(Number(num1), Number(num2), Number(num3), Number(num4), Number(num5));
 
   function intersect(){
     var args = arguments;
@@ -120,7 +111,6 @@ var  num6 = prompt('No luck, try again. Give me a number between 1 to 90');
         }
 
 }
-
 
 console.log(num);
 console.log(result);
