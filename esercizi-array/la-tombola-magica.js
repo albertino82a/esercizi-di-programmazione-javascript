@@ -24,7 +24,6 @@ var num = [];
 console.log(cartella);
 
 
-
 var num1 = prompt('1) give me a number between 1 to 90');
   if ( num1 > 90) {
   alert('inser a good one');
