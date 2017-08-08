@@ -22,7 +22,7 @@ console.log( cartella , num);
 
 
   for (var i = 0; i < cartella.length; i++){
-     if ((cartella[i] % 2) === 0) {
+     if ((cartella[i] % num) === 0) {
 
   cartella.splice(cartella[i], 1, '0');
 }
