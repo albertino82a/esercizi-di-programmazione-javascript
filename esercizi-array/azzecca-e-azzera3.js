@@ -8,7 +8,10 @@
 */
 var cartella = [];
 var randomNumber;
-var a,b;
+var a,b,c,d,e;
+var num = Math.floor(Math.random() * 50) + 1;
+var result = true;
+
 
 
 while(cartella.length < 50) {
@@ -20,21 +23,20 @@ while(cartella.length < 50) {
 cartella.sort(function(a,b){return a-b});
 console.log( cartella, num);
 
+
+
   for (var i = 0; i < cartella.length; i++){
-
-while (cartella[i] > 0) {
-  var num = Math.floor(Math.random() * 8) + 1;
-   if  ((cartella[i] % num ) === 0);
-     cartella[i] = 0;
-
+  if ((cartella[i] % num) === 0) {
+ cartella[i] = 0;
 }
 }
+
 
 
 
 console.log('Cartella previous ' + cartella);
-//console.log('Num 1 is ' + num);
-console.log(i);
+console.log('Num 1 is ' + num);
+console.log('true or false = ' + result);
 
 
 
@@ -43,6 +45,7 @@ console.log(i);
 a = cartella.indexOf(num);
 //console.log("questo  " + cartella.find(checkNumber) + ' ');
 console.log('Cartella position ' + a);
-//console.log('Num is ' + num);
-//cartella.splice(a, 1, '0');
+console.log('Num is ' + num);
+cartella.splice(a, 1, '0');
 console.log('Cartella a ' + cartella);
+console.log('Cartella b ' + b);
